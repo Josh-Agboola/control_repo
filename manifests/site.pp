@@ -1,10 +1,5 @@
 node default{
-  file { '/root/README':
-    ensure  => file, 
-    content => 'This is a readme',
-    owner   => 'root'
-  }
-  file {'/root/README':
-    owner => 'root',
-  }
+}
+node '37912e6cb106' {
+  include role::master_server
 }
